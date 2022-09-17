@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import structures.images.NinePatchPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="600.0" type="GridPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="structures.images.NinePatchTestController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints vgrow="SOMETIMES" />
+    <RowConstraints vgrow="SOMETIMES" />
+    <RowConstraints vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints fillHeight="false" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#anchorTitleL" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleTL" text="Button" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleBL" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleC" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleT" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleB" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleR" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleTR" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#anchorTitleBR" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin></Button>
+         </children>
+      </GridPane>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectImage" text="Select Image">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectTitleImage" text="Select Title Image">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </Button>
+            <CheckBox fx:id="imageRepeatVCB" mnemonicParsing="false" onAction="#setImageRepeatV" text="Repeat Vertically">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="imageRepeatHCB" mnemonicParsing="false" onAction="#setImageRepeatH" text="Repeat Horizontally">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </CheckBox>
+            <TextField fx:id="titleText">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <CheckBox mnemonicParsing="false" onAction="#toggleBorders" selected="true" text="Borders">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </CheckBox>
+         </children>
+      </VBox>
+      <NinePatchPane fx:id="ninePatch1" />
+      <NinePatchPane fx:id="ninePatch2" GridPane.rowIndex="1" />
+      <GridPane prefHeight="196.0" prefWidth="300.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="V Patch Margins" GridPane.columnIndex="1" />
+            <Label text="V Title Patch Margins" GridPane.columnIndex="3" />
+            <Slider fx:id="horizontalPaddingSlider1" blockIncrement="1.0" max="50.0" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
+            </Slider>
+            <Label text="H Patch Margins" />
+            <Slider fx:id="horizontalPaddingSlider2" blockIncrement="1.0" max="50.0" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
+            </Slider>
+            <Label text="H Title Patch Margins" GridPane.columnIndex="2" />
+            <Slider fx:id="verticalPaddingSlider1" blockIncrement="1.0" max="50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Slider fx:id="verticalPaddingSlider2" blockIncrement="1.0" max="50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="H Content Padding" GridPane.rowIndex="2" />
+            <Label text="H Title Content Padding" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="V Content Padding" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="V Title Content Padding" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Slider fx:id="horizontalPaddingSlider3" blockIncrement="1.0" max="50.0" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
+            </Slider>
+            <Slider fx:id="horizontalPaddingSlider4" blockIncrement="1.0" max="50.0" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
+            </Slider>
+            <Slider fx:id="verticalPaddingSlider3" blockIncrement="1.0" max="50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
+            </Slider>
+            <Slider fx:id="verticalPaddingSlider4" blockIncrement="1.0" max="50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
+            </Slider>
+            <Label text="H Title Margins" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="V Title Margins" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label text="V Margins" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="H Margins" GridPane.rowIndex="4" />
+            <Slider fx:id="verticalPaddingSlider5" blockIncrement="1.0" max="50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Slider fx:id="horizontalPaddingSlider5" blockIncrement="1.0" max="50.0" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Slider fx:id="horizontalPaddingSlider6" blockIncrement="1.0" max="50.0" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.rowIndex="5" />
+            <Slider fx:id="verticalPaddingSlider6" blockIncrement="1.0" max="50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </children>
+</fx:root>
